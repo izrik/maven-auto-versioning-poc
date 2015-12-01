@@ -15,4 +15,4 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: python build_script.py
+  script: ruby get_pom_version.py
