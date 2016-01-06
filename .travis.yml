@@ -12,7 +12,3 @@ cache:
 script:
   - echo $TRAVIS_BUILD_NUMBER
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: ruby get_pom_version.rb
