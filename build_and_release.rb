@@ -69,7 +69,6 @@ if ARGV.length < 1
 end
 
 pom_version = pom_evaluate("project.version")
-puts "pom_version: #{pom_version}"
 if not pom_version.end_with?("-SNAPSHOT")
   puts "The project's effective version (#{pom_version}) doesn't end with \"-SNAPSHOT\""
   exit 1
@@ -80,6 +79,13 @@ build_number = ARGV.shift
 new_version = get_version_number(build_number)
 
 
+branches = run_command_return_lines("git branch --no-color --contains")
+branch = branches.find {|line| line.start_with?("*")}.sub(/^\*\s*/, '').strip()
+branch.sub!(/_/, '__')
+branch.sub!(/[\\\/]/,'_')
+if branch != "master"
+  build_number += "-" + branch
+end
 
 # build the project
 run_command("mvn clean")
