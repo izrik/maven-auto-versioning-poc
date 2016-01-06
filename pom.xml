@@ -26,11 +26,11 @@
     <distributionManagement>
         <repository>
             <id>archiva.internal</id>
-            <url>http://izrik-maven-repo:8080/repository/internal/</url>
+            <url>http://104.130.14.131:8080/repository/internal/</url>
         </repository>
         <snapshotRepository>
             <id>archiva.snapshots</id>
-            <url>http://izrik-maven-repo:8080/repository/snapshots/</url>
+            <url>http://104.130.14.131:8080/repository/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -38,7 +38,7 @@
         <repository>
             <id>archiva.internal</id>
             <name>Archiva Managed Internal Repository</name>
-            <url>http://izrik-maven-repo:8080/repository/internal/</url>
+            <url>http://104.130.14.131:8080/repository/internal/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -49,7 +49,7 @@
         <repository>
             <id>archiva.snapshots</id>
             <name>Archiva Managed Snapshot Repository</name>
-            <url>http://izrik-maven-repo:8080/repository/snapshots/</url>
+            <url>http://104.130.14.131:8080/repository/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -62,7 +62,7 @@
         <pluginRepository>
             <id>archiva.internal</id>
             <name>Archiva Managed Internal Repository</name>
-            <url>http://izrik-maven-repo:8080/repository/internal/</url>
+            <url>http://104.130.14.131:8080/repository/internal/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -73,7 +73,7 @@
         <pluginRepository>
             <id>archiva.snapshots</id>
             <name>Archiva Managed Snapshot Repository</name>
-            <url>http://izrik-maven-repo:8080/repository/snapshots/</url>
+            <url>http://104.130.14.131:8080/repository/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
