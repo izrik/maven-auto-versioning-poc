@@ -89,7 +89,7 @@ end
 
 # build the project
 run_command("mvn clean")
-run_command("mvn verify -DVERSION_SUFFIX=#{build_number} ") # -P cassandra-2.0 findbugs:findbugs
+run_command("mvn deploy -DVERSION_SUFFIX=#{build_number} ") # -P cassandra-2.0 findbugs:findbugs
 
 
 
