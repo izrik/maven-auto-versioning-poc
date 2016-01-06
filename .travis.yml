@@ -9,7 +9,7 @@ cache:
   directories:
     - $HOME/.m2
 
-script: mvn deploy -DVERSION_SUFFIX=$TRAVIS_BUILD_NUMBER
+script: mvn --settings travis-settings.xml -DVERSION_SUFFIX=$TRAVIS_BUILD_NUMBER deploy
 #  - echo TRAVIS_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
 #  - echo TRAVIS_BUILD_ID=$TRAVIS_BUILD_ID
 #  - echo TRAVIS_BRANCH=$TRAVIS_BRANCH
