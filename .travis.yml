@@ -10,7 +10,7 @@ cache:
     - $HOME/.m2
 
 script:
-  - echo script
+  - echo $TRAVIS_BUILD_NUMBER
 
 deploy:
   skip_cleanup: true
