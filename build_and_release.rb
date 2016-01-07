@@ -84,7 +84,7 @@ branch = branches.find {|line| line.start_with?("*")}.sub(/^\*\s*/, '').strip()
 branch.sub!(/_/, '__')
 branch.sub!(/[\\\/]/,'_')
 if branch != "master"
-  build_number += "-" + branch
+  build_number += "-" + branch + "-SNAPSHOT"
 end
 
 # build the project
